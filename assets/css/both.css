@@ -1,0 +1,706 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar - Glassmorphism */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+/* Navigation Bar Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* Home Page */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+/* Profile Image */
+.large-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+/* Neumorphism Box */
+.neumorphism-box {
+    width: 220px;
+    height: 150px;
+    background: #111;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    box-shadow: 
+        5px 5px 15px rgba(255, 0, 0, 0.5), 
+        -5px -5px 15px rgba(255, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.neumorphism-box:hover {
+    transform: scale(1.08);
+    box-shadow: 
+        8px 8px 20px rgba(208, 255, 0, 0.8), 
+        -8px -8px 20px rgba(255, 0, 0, 0.4), 
+        0 0 25px rgba(255, 0, 0, 0.6);
+}
+
+/* Glassmorphism Box for Projects */
+.glassmorphism {
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(255, 0, 0, 0.4);
+    color: white;
+}
+
+/* Contact Page - 3D UI */
+.contact-container {
+    margin-top: 100px;
+    padding: 20px;
+    background: linear-gradient(145deg, #1e1e1e, #262626);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #131313, -10px -10px 20px #2e2e2e;
+    display: inline-block;
+    padding: 30px;
+}
+
+.contact-container h2 {
+    font-size: 28px;
+    color: #f1f1f1;
+}
+
+/* Contact Button */
+.contact-container button {
+    background: linear-gradient(45deg, red, darkred);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .large-image {
+        width: 200px;
+        height: 200px;
+    }
+    .neumorphism-box {
+        width: 180px;
+        height: 130px;
+    }
+}
+2nd
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgb(255, 254, 255);
+    z-index: 1000;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #968079;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* Education Section */
+.education-container {
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+}
+
+.education-container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    gap: 30px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Specific Row Alignment */
+.education-box:nth-child(1) {
+    grid-column: span 2; /* Full-width first row */
+}
+
+.education-box:nth-child(4) {
+    grid-column: span 2; /* Full-width third row */
+}
+
+/* Neumorphism Education Box */
+.education-box {
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #968079); /* Softer red */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.5), 
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        10px 10px 20px rgba(0, 0, 0, 0.6), 
+        -10px -10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Education Title */
+.education-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Institution & Year */
+.education-box p {
+    font-size: 16px;
+    color: #fefefe;
+    margin: 5px 0;
+}
+
+/* Divider Line */
+.education-box hr {
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-container h1 {
+        font-size: 28px;
+    }
+
+    .education-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-box {
+        width: 280px;
+        height: auto;
+    }
+}
+3rd
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.skills-container {
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+}
+
+/* Section Titles */
+.skills-container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Skills Category (Soft & Hard Skills) */
+.skills-category {
+    margin-bottom: 50px;
+}
+
+.skills-category h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid (5 Images per Row) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Skill Image Styling */
+.skills-grid img {
+    width: 80%;
+    height:100%;
+    border-radius: 15px;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.5), 
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.skills-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        10px 10px 20px rgba(0, 0, 0, 0.6), 
+        -10px -10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container h1 {
+        font-size: 28px;
+    }
+
+    .skills-category h2 {
+        font-size: 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on very small screens */
+    }
+}
+4th
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+header {
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: red;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects-container {
+    text-align: center;
+    padding: 100px 10%;
+    color: white;
+}
+
+.projects-container h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* Box Layout */
+.projects-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-box {
+    background: rgba(255, 255, 255, 0.589);
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 1800px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+}
+
+.project-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+.project-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+5th
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Background Video */
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navigation Bar */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 120px 10%;
+    color: white;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Contact Box */
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.contact-box:hover {
+    transform: scale(1.05);
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(255, 0, 200);
+    box-shadow: 0 0 5px rgb(0, 217, 255);
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background: rgb(0, 255, 255);
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: orange;
+}
